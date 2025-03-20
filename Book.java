@@ -1,12 +1,16 @@
 class Book 
-        {
-            public static void main(String Classmate[]) 
-            {
-                System.out.println("Classmate Notebook - Single Line, 172 Pages, 240 mm x 180 mm - Pack Of 4");
-                System.out.println("The cover design of the notebook is subject to change, it depends on stock availability");
-                System.out.println("Pack Of 4 - Single Line Notebook, 172,Pages, 240 mm x 180 mm");
-                System.out.println("Notebooks for every subject for hassle-free note-taking during classes or lectures.");
-                System.out.println("Classmate uses elemental chlorine free paper");  
-                System.out.println("This notebook consists of quality papers");
-            }
-        }
+{
+    public static void main(String  Amaryllis[]) 
+	{
+        String name = "The Art of Being Alone";
+        int pages = 152;
+        String weight = "150 g";
+        String dimensions = "14 x 1.5 x 22 cm";
+        String language = "English";
+        System.out.println("The is Name: " + name);
+        System.out.println("The is Pages: " + pages);
+        System.out.println("The is Weight: " + weight);
+        System.out.println("The is Dimensions: " + dimensions);
+        System.out.println("The is Language: " + language);
+    }
+}
