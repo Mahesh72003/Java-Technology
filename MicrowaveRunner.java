@@ -1,0 +1,29 @@
+class MicrowaveRunner
+{
+    public static void main(String Voltas[])
+    {
+        Microwave.onOrOff(); 
+        Microwave.increaseTemperature();
+        Microwave.increaseTemperature();
+        Microwave.increaseTemperature();
+        Microwave.increaseTemperature();
+        Microwave.increaseTemperature();
+        Microwave.increaseTemperature();
+        Microwave.increaseTemperature();
+        Microwave.increaseTemperature(); 
+        Microwave.onOrOff(); 
+        Microwave.increaseTemperature(); 
+        Microwave.onOrOff(); 
+        Microwave.decreaseTemperature();
+        Microwave.decreaseTemperature();
+        Microwave.decreaseTemperature();
+        Microwave.decreaseTemperature();
+        Microwave.decreaseTemperature();
+        Microwave.decreaseTemperature();
+        Microwave.decreaseTemperature();
+        Microwave.decreaseTemperature(); 
+        Microwave.onOrOff(); 
+        Microwave.increaseTemperature(); 
+        Microwave.decreaseTemperature(); 
+    }
+}

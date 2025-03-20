@@ -1,0 +1,31 @@
+public class ProjectorRunner
+{
+    public static void main(String epson[])
+    {
+        Projector.onOrOff(); 
+        Projector.HDMIConnection();
+        Projector.HDMIConnection();
+		Projector.increaseVolume();
+        Projector.decreaseVolume();
+        Projector.increaseVolume();
+        Projector.increaseBrightness();
+        Projector.decreaseBrightness();
+        Projector.increaseBrightness();
+        Projector.onOrOff();
+        Projector.HDMIConnection();
+		Projector.increaseVolume();
+        Projector.decreaseVolume();
+        Projector.increaseVolume();
+		Projector.onOrOff();
+        Projector.increaseBrightness();
+        Projector.decreaseBrightness();
+        Projector.increaseBrightness();
+		Projector.increaseVolume();
+        Projector.decreaseVolume();
+        Projector.increaseVolume();
+		Projector.HDMIConnection();
+        Projector.increaseBrightness();
+        Projector.decreaseBrightness();
+        Projector.increaseBrightness();
+    }
+}
