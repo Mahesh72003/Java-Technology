@@ -1,1 +1,1 @@
-# full-stack-java
+# Java Technology
