@@ -20,5 +20,6 @@ public class SwiggyRunner {
 
         SwiggyRegCheck swiggyRegCheck = new SwiggyRegCheck();
         swiggyRegCheck.userRegistered(swiggyDto);
+        swiggyRegCheck.getUserDetails(swiggyDto);
     }
 }

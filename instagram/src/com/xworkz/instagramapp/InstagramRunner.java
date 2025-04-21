@@ -18,6 +18,7 @@ public class InstagramRunner
 
         InstagramRegCheck instagramRegCheck= new InstagramRegCheck();
         instagramRegCheck.userRegisterd(instagramDto);
+        instagramRegCheck.getUserDetails(instagramDto);
 
 
 

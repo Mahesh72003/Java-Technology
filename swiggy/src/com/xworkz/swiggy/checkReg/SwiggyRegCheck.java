@@ -3,10 +3,11 @@ package com.xworkz.swiggy.checkReg;
 import com.xworkz.swiggy.swiggyDto.SwiggyDto;
 
 public class SwiggyRegCheck {
-
+SwiggyDto swiggyDto;
     public void userRegistered(SwiggyDto swiggyDto) {
         boolean isUserValid = userValid(swiggyDto);
         if (isUserValid) {
+            this.swiggyDto=swiggyDto;
             System.out.println("User registration successful!");
         }
         else {
@@ -96,5 +97,17 @@ public class SwiggyRegCheck {
         }
 
         return isUserValid;
+    }
+    public void getUserDetails(SwiggyDto swiggyDto) {
+        System.out.println("Swiggy User Details:");
+        System.out.println("First Name: " + this.swiggyDto.getFirstName());
+        System.out.println("Last Name: " + this.swiggyDto.getLastName());
+        System.out.println("Email Address: " + this.swiggyDto.getEmailAddress());
+        System.out.println("Phone Number: " + this.swiggyDto.getPhoneNo());
+        System.out.println("Password: " + this.swiggyDto.getPassword());
+        System.out.println("Gender: " + this.swiggyDto.getGender());
+        System.out.println("Date of Birth: " + this.swiggyDto.getDob());
+        System.out.println("Location: " + this.swiggyDto.getLocation());
+        System.out.println("Address: " + this.swiggyDto.getAddress());
     }
 }

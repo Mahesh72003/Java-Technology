@@ -1,8 +1,9 @@
 package com.xworkz.canvaapp.signup;
 import com.xworkz.canvaapp.userdata.CanvaUserDto;
 public class Canva {
-
+    CanvaUserDto canvaUserDto;
         public boolean userSignUp(CanvaUserDto user) {
+            this.canvaUserDto=user;
             return userValidation(user);
         }
 
@@ -48,6 +49,13 @@ public class Canva {
             }
 
             return isEmailValid && isUserNameValid && isPasswordValid && isFullNameValid && isAccountTypeValid;
+        }
+        public void getUserDetails(CanvaUserDto canvaUserDto)
+        {
+            System.out.println("Email: " + this.canvaUserDto.getEmail());
+            System.out.println("User Name: " + this.canvaUserDto.getUserName());
+            System.out.println("Full Name: " + this.canvaUserDto.getFullName());
+            System.out.println("Account Type: " + this.canvaUserDto.getAccountType());
         }
     }
 

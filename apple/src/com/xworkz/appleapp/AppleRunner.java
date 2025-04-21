@@ -15,10 +15,11 @@ public class AppleRunner {
             user.setConfirmPassword("apple@2025");
             user.setContactNumber(9876543210L);
 
-            AppleLogin login = new AppleLogin();
-            boolean result = login.verifySignIn(user);
+           AppleLogin login = new AppleLogin();
 
-            System.out.println("Login success: " + result);
+            login.verifySignIn(user);
+
+            login.getUserDetails(user);
         }
     }
 

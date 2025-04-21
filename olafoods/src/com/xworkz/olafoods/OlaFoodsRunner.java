@@ -15,6 +15,7 @@ public class OlaFoodsRunner
             OlaFoods olaFoods = new OlaFoods();
             if (olaFoods.userSignUp(user1)) {
                 System.out.println("OlaFoods Registration Successful!");
+                olaFoods.getUserDetails(user1);
             } else {
                 System.out.println("OlaFoods Registration Failed!");
             }

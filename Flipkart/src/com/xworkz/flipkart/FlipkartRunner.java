@@ -22,5 +22,6 @@ public class FlipkartRunner {
 
         FlipkartRegCheck FlipkartRegCheck = new FlipkartRegCheck();
         FlipkartRegCheck.userRegistered(FlipkartDto);
+        FlipkartRegCheck.getUserDetails(FlipkartDto);
     }
 }

@@ -20,5 +20,6 @@ public class LinkedInRunner {
 
         LinkedInRegCheck linkedInRegCheck = new LinkedInRegCheck();
         linkedInRegCheck.userRegistered(linkedInDto);
+        linkedInRegCheck.getUserDetails(linkedInDto);
     }
 }

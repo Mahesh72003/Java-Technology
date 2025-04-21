@@ -22,5 +22,6 @@ public class RedBusRunner {
 
         RedBusRegCheck redBusRegCheck = new RedBusRegCheck();
         redBusRegCheck.userRegistered(redBusDto);
+        redBusRegCheck.getUserDetails(redBusDto);
     }
 }

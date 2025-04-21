@@ -4,10 +4,11 @@ import com.xworkz.LinkedIn.linkedinDto.LinkedInDto;
 import com.xworkz.LinkedIn.constant.Country;
 
 public class LinkedInRegCheck {
-
+LinkedInDto linkedInDto;
     public void userRegistered(LinkedInDto linkedInDto) {
         boolean isUserValid = userValid(linkedInDto);
         if (isUserValid) {
+            this.linkedInDto=linkedInDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -103,5 +104,17 @@ public class LinkedInRegCheck {
         }
 
         return isUserValid;
+    }
+    public void getUserDetails(LinkedInDto linkedInDto) {
+        System.out.println("LinkedIn User Details:");
+        System.out.println("First Name: " + this.linkedInDto.getFirstName());
+        System.out.println("Last Name: " + this.linkedInDto.getLastName());
+        System.out.println("Email Address: " + this.linkedInDto.getEmailAddress());
+        System.out.println("Job Title: " + this.linkedInDto.getJobTitle());
+        System.out.println("Phone Number: " + this.linkedInDto.getPhoneNo());
+        System.out.println("Date of Birth: " + this.linkedInDto.getDob());
+        System.out.println("Country: " + this.linkedInDto.getCountry());
+        System.out.println("Location: " + this.linkedInDto.getLocation());
+        System.out.println("Captcha: " + this.linkedInDto.getCaptcha());
     }
 }

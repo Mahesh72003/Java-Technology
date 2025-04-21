@@ -1,9 +1,13 @@
 package com.xworkz.githubapp.signup;
 import com.xworkz.githubapp.userdata.GitHubUserDto;
+
+import java.security.PublicKey;
+
 public class GitHub
 {
-
+GitHubUserDto gitHubUserDto;
         public boolean userSignUp(GitHubUserDto user) {
+            gitHubUserDto=user;
             return userValidation(user);
         }
 
@@ -38,6 +42,13 @@ public class GitHub
             }
 
             return isEmailValid && isUserNameValid && isPasswordValid && isFullNameValid;
+        }
+        public void getUserDetails(GitHubUserDto gitHubUserDto)
+        {
+            System.out.println("Full Name: " + this.gitHubUserDto.getFullName());
+            System.out.println("Username: " + this.gitHubUserDto.getUserName());
+            System.out.println("Email: " + this.gitHubUserDto.getEmail());
+            System.out.println("Bio: " + this.gitHubUserDto.getBio());
         }
     }
 

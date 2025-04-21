@@ -3,10 +3,11 @@ package com.xworkz.bigbasket.checkReg;
 import com.xworkz.bigbasket.bigbasketDto.BigBasketDto;
 
 public class BigBasketRegCheck {
-
+BigBasketDto basketDto;
     public void userRegistered(BigBasketDto bigBasketDto) {
         boolean isUserValid = userValid(bigBasketDto);
         if (isUserValid) {
+            this.basketDto=bigBasketDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -103,5 +104,18 @@ public class BigBasketRegCheck {
         }
 
         return isUserValid;
+    }
+    public void getuserDetails(BigBasketDto Dto)
+    {
+        System.out.println("First Name: " + this.basketDto.getFirstName());
+        System.out.println("Last Name: " + this.basketDto.getLastName());
+        System.out.println("Email Address: " + this.basketDto.getEmailAddress());
+        System.out.println("Phone Number: " + this.basketDto.getPhoneNo());
+        System.out.println("Password: " + this.basketDto.getPassword());
+        System.out.println("Gender: " + this.basketDto.getGender());
+        System.out.println("Date of Birth: " + this.basketDto.getDob());
+        System.out.println("Location: " + this.basketDto.getLocation());
+        System.out.println("Address: " + this.basketDto.getAddress());
+        System.out.println("Payment Method: " + this.basketDto.getPaymentMethod());
     }
 }

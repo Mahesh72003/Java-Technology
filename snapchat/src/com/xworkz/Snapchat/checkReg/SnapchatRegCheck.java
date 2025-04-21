@@ -4,10 +4,11 @@ import com.xworkz.Snapchat.snapchatDto.SnapchatDto;
 
 
 public class SnapchatRegCheck {
-
+SnapchatDto snapchatDto;
     public void userRegistered(SnapchatDto snapchatDto) {
         boolean isUserValid = userValid(snapchatDto);
         if (isUserValid) {
+            this.snapchatDto=snapchatDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -95,5 +96,17 @@ public class SnapchatRegCheck {
         }
 
         return isUserValid;
+    }
+    public void getUserDetails(SnapchatDto snapchatDto) {
+        System.out.println("Snapchat User Details:");
+        System.out.println("First Name: " + this.snapchatDto.getFirstName());
+        System.out.println("Last Name: " + this.snapchatDto.getLastName());
+        System.out.println("Username: " + this.snapchatDto.getUsername());
+        System.out.println("Email Address: " + this.snapchatDto.getEmailAddress());
+        System.out.println("Password: " + this.snapchatDto.getPassword());
+        System.out.println("Gender: " + this.snapchatDto.getGender());
+        System.out.println("Phone Number: " + this.snapchatDto.getPhoneNo());
+        System.out.println("Date of Birth: " + this.snapchatDto.getDob());
+        System.out.println("Captcha: " + this.snapchatDto.getCaptcha());
     }
 }

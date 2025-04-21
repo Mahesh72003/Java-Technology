@@ -3,7 +3,6 @@ import com.xworkz.canvaapp.userdata.CanvaUserDto;
 import com.xworkz.canvaapp.signup.Canva;
 public class CanvaRunner
 {
-
         public static void main(String[] args) {
             CanvaUserDto user1 = new CanvaUserDto();
             user1.setEmail("mahesh@canva.com");
@@ -15,6 +14,8 @@ public class CanvaRunner
             Canva canva = new Canva();
             if (canva.userSignUp(user1)) {
                 System.out.println("Canva Registration Successful!");
+                canva.getUserDetails(user1);
+
             } else {
                 System.out.println("Canva Registration Failed!");
             }

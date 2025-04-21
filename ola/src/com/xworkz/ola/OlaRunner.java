@@ -22,5 +22,6 @@ public class OlaRunner {
 
         OlaRegCheck olaRegCheck = new OlaRegCheck();
         olaRegCheck.userRegistered(olaDto);
+        olaRegCheck.getUserDetails(olaDto);
     }
 }

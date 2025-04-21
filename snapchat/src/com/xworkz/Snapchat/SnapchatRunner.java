@@ -19,5 +19,6 @@ public class SnapchatRunner {
 
         SnapchatRegCheck snapchatRegCheck = new SnapchatRegCheck();
         snapchatRegCheck.userRegistered(snapchatDto);
+        snapchatRegCheck.getUserDetails(snapchatDto);
     }
 }

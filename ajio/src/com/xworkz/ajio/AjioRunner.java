@@ -21,5 +21,6 @@ public class AjioRunner {
 
         AjioRegCheck ajioRegCheck = new AjioRegCheck();
         ajioRegCheck.userRegistered(ajioDto);
+        ajioRegCheck.getuserDetails(ajioDto);
     }
 }

@@ -3,10 +3,11 @@ package com.xworkz.tatacliq.checkReg;
 import com.xworkz.tatacliq.tatacliqDto.TataCliqDto;
 
 public class TataCliqRegCheck {
-
+TataCliqDto tataCliqDto;
     public void userRegistered(TataCliqDto tataCliqDto) {
         boolean isUserValid = userValid(tataCliqDto);
         if (isUserValid) {
+            this.tataCliqDto=tataCliqDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -103,6 +104,18 @@ public class TataCliqRegCheck {
 
         return isUserValid;
     }
-
+    public void getUserDetails(TataCliqDto tataCliqDto) {
+        System.out.println("TataCliq User Details:");
+        System.out.println("Name: " + this.tataCliqDto.getName());
+        System.out.println("Email Address: " + this.tataCliqDto.getEmailAddress());
+        System.out.println("Phone Number: " + this.tataCliqDto.getPhoneNo());
+        System.out.println("Password: " + this.tataCliqDto.getPassword());
+        System.out.println("Gender: " + this.tataCliqDto.getGender());
+        System.out.println("Date of Birth: " + this.tataCliqDto.getDob());
+        System.out.println("Location: " + this.tataCliqDto.getLocation());
+        System.out.println("Billing Address: " + this.tataCliqDto.getBillingAddress());
+        System.out.println("Shipping Address: " + this.tataCliqDto.getShippingAddress());
+        System.out.println("Payment Method: " + this.tataCliqDto.getPaymentMethod());
+    }
 
 }

@@ -22,5 +22,6 @@ public class AmazonRunner {
 
         AmazonRegCheck amazonRegCheck = new AmazonRegCheck();
         amazonRegCheck.userRegistered(amazonDto);
+        amazonRegCheck.getUserDetails(amazonDto);
     }
 }

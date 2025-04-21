@@ -14,9 +14,9 @@ public class NetFlixRunner {
             user.setMobileNumber(9876543210L);
 
             NetflixUserSignin login = new NetflixUserSignin();
-            boolean status = login.attemptLogin(user);
+            login.attemptLogin(user);
+            login.getUserDetails(user);
 
-            System.out.println("Login status: " + status);
         }
     }
 

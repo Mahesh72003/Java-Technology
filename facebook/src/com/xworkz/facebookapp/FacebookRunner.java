@@ -19,6 +19,7 @@ public class FacebookRunner {
 
         FacebookRegCheck facebookRegCheck = new FacebookRegCheck();
         facebookRegCheck.userRegisterd(facebookDto);
+        facebookRegCheck.getUserDetails(facebookDto);
 
 
     }

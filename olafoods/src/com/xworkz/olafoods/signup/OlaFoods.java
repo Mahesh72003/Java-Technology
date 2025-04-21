@@ -2,8 +2,9 @@ package com.xworkz.olafoods.signup;
 import com.xworkz.olafoods.userdata.OlaFoodsUserDto;
 public class OlaFoods
 {
-
+OlaFoods olaFoods;
         public boolean userSignUp(OlaFoodsUserDto user) {
+
             return userValidation(user);
         }
 
@@ -46,6 +47,15 @@ public class OlaFoods
 
             return isEmailValid && isPhoneValid && isPasswordValid && isFullNameValid && isDeliveryAreaValid;
         }
+
+    public void getUserDetails(OlaFoodsUserDto user) {
+        System.out.println("OlaFoods User Details:");
+        System.out.println("Full Name: " + user.getFullName());
+        System.out.println("Email Address: " + user.getEmail());
+        System.out.println("Phone Number: " + user.getPhoneNumber());
+        System.out.println("Password: " + user.getPassword());
+        System.out.println("Delivery Area: " + user.getDeliveryArea());
+    }
     }
 
 

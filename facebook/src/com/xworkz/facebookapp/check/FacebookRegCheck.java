@@ -3,10 +3,11 @@ package com.xworkz.facebookapp.check;
 import com.xworkz.facebookapp.facebookdto.FacebookDto;
 
 public class FacebookRegCheck {
-
+FacebookDto facebookDto;
     public void userRegisterd(FacebookDto facebookDto) {
         boolean isUserValid = userValid(facebookDto);
         if (isUserValid) {
+            this.facebookDto=facebookDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -70,5 +71,15 @@ public class FacebookRegCheck {
         }
 
         return isUserValid;
+    }
+    public void getUserDetails(FacebookDto facebookDto)
+    {
+        System.out.println("First Name: " + this.facebookDto.getFirstName());
+        System.out.println("Last Name: " + this.facebookDto.getLastName());
+        System.out.println("Gender: " + this.facebookDto.getGender());
+        System.out.println("Language: " + this.facebookDto.getLanguage());
+        System.out.println("Mobile Number: " + this.facebookDto.getMobileNumber());
+        System.out.println("Email Address: " + this.facebookDto.getEmailAddress());
+        System.out.println("Date of Birth: " + this.facebookDto.getDob());
     }
 }

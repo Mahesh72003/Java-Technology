@@ -4,9 +4,11 @@ import com.xworkz.ajio.ajioDto.AjioDto;
 
 public class AjioRegCheck {
 
+    AjioDto ajioDto;
     public void userRegistered(AjioDto ajioDto) {
         boolean isUserValid = userValid(ajioDto);
         if (isUserValid) {
+            this.ajioDto=ajioDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -95,5 +97,16 @@ public class AjioRegCheck {
         return isUserValid;
     }
 
+    public void getuserDetails(AjioDto dto){
+        System.out.println("the User Name is "+this.ajioDto.getName());
+        System.out.println("the Email Id is "+this.ajioDto.getEmailAddress());
+        System.out.println("the Phone no is "+this.ajioDto.getPhoneNo());
+        System.out.println("the password is "+this.ajioDto.getPassword());
+        System.out.println("the gender is "+this.ajioDto.getGender());
+        System.out.println("the Dob is "+this.ajioDto.getDob());
+        System.out.println("the location is "+this.ajioDto.getLocation());
+        System.out.println("the address is "+this.ajioDto.getAddress());
+        System.out.println("the mode of payment is "+this.ajioDto.getPaymentMethod());
+    }
 
 }

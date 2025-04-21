@@ -22,5 +22,6 @@ public class TataCliqRunner {
 
         TataCliqRegCheck tataCliqRegCheck = new TataCliqRegCheck();
         tataCliqRegCheck.userRegistered(tataCliqDto);
+        tataCliqRegCheck.getUserDetails(tataCliqDto);
     }
 }

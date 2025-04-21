@@ -10,7 +10,7 @@ public class BigBasketRunner {
 
         BigBasketDto bigBasketDto = new BigBasketDto();
         bigBasketDto.setFirstName("mahesh");
-        bigBasketDto.setLastName("A V");
+        bigBasketDto.setLastName("");
         bigBasketDto.setEmailAddress("mahesh@test.com");
         bigBasketDto.setPhoneNo(890463382L);
         bigBasketDto.setPassword("mahesh@2003");
@@ -23,5 +23,6 @@ public class BigBasketRunner {
 
         BigBasketRegCheck bigBasketRegCheck = new BigBasketRegCheck();
         bigBasketRegCheck.userRegistered(bigBasketDto);
+        bigBasketRegCheck.getuserDetails(bigBasketDto);
     }
 }

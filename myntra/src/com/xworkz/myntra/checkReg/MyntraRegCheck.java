@@ -4,12 +4,13 @@ import com.xworkz.myntra.myntraDto.MyntraDto;
 
 public class MyntraRegCheck
 {
-
+MyntraDto myntraDto;
     public void userRegistered(MyntraDto myntraDto)
     {
         boolean isUserValid = userValid(myntraDto);
         if (isUserValid)
         {
+            this.myntraDto=myntraDto;
             System.out.println("User registration successful!");
         }
         else
@@ -109,5 +110,18 @@ public class MyntraRegCheck
 
             return isUserValid;
         }
+    public void getUserDetails(MyntraDto myntraDto) {
+        System.out.println("Myntra User Details:");
+        System.out.println("Name: " + this.myntraDto.getName());
+        System.out.println("Email Address: " + this.myntraDto.getEmailAddress());
+        System.out.println("Phone Number: " + this.myntraDto.getPhoneNo());
+        System.out.println("Password: " +this.myntraDto.getPassword());
+        System.out.println("Age: " + this.myntraDto.getAge());
+        System.out.println("Gender: " + this.myntraDto.getGender());
+        System.out.println("Date of Birth: " + this.myntraDto.getDob());
+        System.out.println("Location: " + this.myntraDto.getLocation());
+        System.out.println("Address: " + this.myntraDto.getAddress());
+        System.out.println("Payment Method: " + this.myntraDto.getPaymentMethod());
+    }
 
 }

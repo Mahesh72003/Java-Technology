@@ -23,5 +23,7 @@ public class MyntraRunner {
 
         MyntraRegCheck myntraRegCheck = new MyntraRegCheck();
         myntraRegCheck.userRegistered(myntraDto);
+        myntraRegCheck.getUserDetails(myntraDto);
     }
+
 }

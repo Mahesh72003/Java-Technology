@@ -3,10 +3,11 @@ package com.xworkz.ola.checkReg;
 import com.xworkz.ola.olaDto.OlaDto;
 
 public class OlaRegCheck {
-
+OlaDto olaDto;
     public void userRegistered(OlaDto olaDto) {
         boolean isUserValid = userValid(olaDto);
         if (isUserValid) {
+            this.olaDto=olaDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -104,4 +105,18 @@ public class OlaRegCheck {
 
         return isUserValid;
     }
+    public void getUserDetails(OlaDto olaDto) {
+        System.out.println("Ola User Details:");
+        System.out.println("First Name: " + this.olaDto.getFirstName());
+        System.out.println("Last Name: " + this.olaDto.getLastName());
+        System.out.println("Email Address: " + this.olaDto.getEmailAddress());
+        System.out.println("Phone Number: " + this.olaDto.getPhoneNo());
+        System.out.println("Password: " + this.olaDto.getPassword());
+        System.out.println("Date of Birth: " + this.olaDto.getDob());
+        System.out.println("Location: " + this.olaDto.getLocation());
+        System.out.println("Address: " + this.olaDto.getAddress());
+        System.out.println("Payment Method: " + this.olaDto.getPaymentMethod());
+        System.out.println("Captcha: " + this.olaDto.getCaptcha());
+    }
+
 }

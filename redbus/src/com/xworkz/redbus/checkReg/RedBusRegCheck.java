@@ -3,10 +3,11 @@ package com.xworkz.redbus.checkReg;
 import com.xworkz.redbus.redbusDto.RedBusDto;
 
 public class RedBusRegCheck {
-
+RedBusDto redBusDto;
     public void userRegistered(RedBusDto redBusDto) {
         boolean isUserValid = userValid(redBusDto);
         if (isUserValid) {
+            this.redBusDto=redBusDto;
             System.out.println("User registration successful!");
         } else {
             System.out.println("User registration failed.");
@@ -103,5 +104,18 @@ public class RedBusRegCheck {
         }
 
         return isUserValid;
+    }
+    public void getUserDetails(RedBusDto redBusDto) {
+        System.out.println("RedBus User Details:");
+        System.out.println("First Name: " + this.redBusDto.getFirstName());
+        System.out.println("Last Name: " + this.redBusDto.getLastName());
+        System.out.println("Email Address: " + this.redBusDto.getEmailAddress());
+        System.out.println("Phone Number: " + this.redBusDto.getPhoneNo());
+        System.out.println("Password: " + this.redBusDto.getPassword());
+        System.out.println("Gender: " + this.redBusDto.getGender());
+        System.out.println("Date of Birth: " + this.redBusDto.getDob());
+        System.out.println("Location: " + this.redBusDto.getLocation());
+        System.out.println("Address: " + this.redBusDto.getAddress());
+        System.out.println("Payment Method: " + this.redBusDto.getPaymentMethod());
     }
 }

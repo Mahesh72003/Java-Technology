@@ -15,6 +15,7 @@ public class GitHubRunner
             GitHub github = new GitHub();
             if (github.userSignUp(user1)) {
                 System.out.println("GitHub Registration Successful!");
+                github.getUserDetails(user1);
             } else {
                 System.out.println("GitHub Registration Failed!");
             }
