@@ -1,15 +1,34 @@
 package com.xworkz.measuringinstrument;
 
+import com.xworkz.measuringinstrument.measuringinstrument.MeasuringInstrument;
 import com.xworkz.measuringinstrument.ruler.Ruler;
-import com.xworkz.musicalinstrument.musicalinstrument.MusicalInstrument;
 
 public class MeasuringInstrumentRunner {
     public static void main(String[] args) {
-        MusicalInstrument musicalInstrument = new MusicalInstrument();
-        musicalInstrument.validateMusicalInstrumentDetails();
+
+
+        MeasuringInstrument measuringInstrument = new MeasuringInstrument();
+        measuringInstrument.validateMeasuringInstrumentDetails();
+        measuringInstrument.calibrate();
+        measuringInstrument.takeMeasurement();
+        measuringInstrument.resetInstrument();
+        measuringInstrument.showMeasurementUnit();
+
+
+        MeasuringInstrument ref = new Ruler();
+        ref.validateMeasuringInstrumentDetails();
+        ref.calibrate();
+        ref.takeMeasurement();
+        ref.resetInstrument();
+        ref.showMeasurementUnit();
+
 
         Ruler ruler = new Ruler();
-        ruler.validateMusicalInstrumentDetails();
+        ruler.validateMeasuringInstrumentDetails();
+        ruler.calibrate();
+        ruler.takeMeasurement();
+        ruler.resetInstrument();
+        ruler.showMeasurementUnit();
+        ruler.drawLine();
     }
-
 }
