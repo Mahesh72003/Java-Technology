@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Assignment 23.iml" filepath="$PROJECT_DIR$/.idea/Assignment 23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Flipkart/Flipkart.iml" filepath="$PROJECT_DIR$/Flipkart/Flipkart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ajio/ajio.iml" filepath="$PROJECT_DIR$/ajio/ajio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/amazon/amazon.iml" filepath="$PROJECT_DIR$/amazon/amazon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apple/apple.iml" filepath="$PROJECT_DIR$/apple/apple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigbasket/bigbasket.iml" filepath="$PROJECT_DIR$/bigbasket/bigbasket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/canva/canva.iml" filepath="$PROJECT_DIR$/canva/canva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/github/github.iml" filepath="$PROJECT_DIR$/github/github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google/google.iml" filepath="$PROJECT_DIR$/google/google.iml" />
+      <module fileurl="file://$PROJECT_DIR$/instagram/instagram.iml" filepath="$PROJECT_DIR$/instagram/instagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkedIn/linkedIn.iml" filepath="$PROJECT_DIR$/linkedIn/linkedIn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myntra/myntra.iml" filepath="$PROJECT_DIR$/myntra/myntra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netflix/netflix.iml" filepath="$PROJECT_DIR$/netflix/netflix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nykaa/nykaa.iml" filepath="$PROJECT_DIR$/nykaa/nykaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ola/ola.iml" filepath="$PROJECT_DIR$/ola/ola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/olafoods/olafoods.iml" filepath="$PROJECT_DIR$/olafoods/olafoods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/passportseva/passportseva.iml" filepath="$PROJECT_DIR$/passportseva/passportseva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paytm/paytm.iml" filepath="$PROJECT_DIR$/paytm/paytm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phonepe/phonepe.iml" filepath="$PROJECT_DIR$/phonepe/phonepe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redbus/redbus.iml" filepath="$PROJECT_DIR$/redbus/redbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snapchat/snapchat.iml" filepath="$PROJECT_DIR$/snapchat/snapchat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spotify/spotify.iml" filepath="$PROJECT_DIR$/spotify/spotify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiggy/swiggy.iml" filepath="$PROJECT_DIR$/swiggy/swiggy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tatacliq/tatacliq.iml" filepath="$PROJECT_DIR$/tatacliq/tatacliq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twitter/twitter.iml" filepath="$PROJECT_DIR$/twitter/twitter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uber/uber.iml" filepath="$PROJECT_DIR$/uber/uber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ubereats/ubereats.iml" filepath="$PROJECT_DIR$/ubereats/ubereats.iml" />
+      <module fileurl="file://$PROJECT_DIR$/walmart/walmart.iml" filepath="$PROJECT_DIR$/walmart/walmart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wikipedia/wikipedia.iml" filepath="$PROJECT_DIR$/wikipedia/wikipedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youtube/youtube.iml" filepath="$PROJECT_DIR$/youtube/youtube.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zepto/zepto.iml" filepath="$PROJECT_DIR$/zepto/zepto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zomato/zomato.iml" filepath="$PROJECT_DIR$/zomato/zomato.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zoomcar/zoomcar.iml" filepath="$PROJECT_DIR$/zoomcar/zoomcar.iml" />
+    </modules>
+  </component>
+</project>

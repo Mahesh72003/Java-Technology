@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib (10)">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/zepto/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/zepto/lib" recursive="false" />
+  </library>
+</component>
